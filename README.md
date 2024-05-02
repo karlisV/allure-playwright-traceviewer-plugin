@@ -1,0 +1,1 @@
+# allure-playwright-traceviewer-plugin
