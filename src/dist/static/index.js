@@ -1,6 +1,6 @@
 'use strict';
 
-const settings = allure.getPluginSettings('playwright-traceview-plugin', {default_trace_app_url: "https://playwright.aqa.forte.io"});
+const settings = allure.getPluginSettings('playwright-traceview-plugin', {default_trace_app_url: "https://trace.playwright.dev"});
 
     function getBasePath() {
         let pathname = window.location.pathname;
