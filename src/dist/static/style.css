@@ -1,3 +1,7 @@
-.trace-view-container{
-    margin-left: 10px;
+.trace-view-container {
+    margin: 10px;
+}
+
+.trace-view-container > .trace-content {
+    margin-top: 10px;
 }
