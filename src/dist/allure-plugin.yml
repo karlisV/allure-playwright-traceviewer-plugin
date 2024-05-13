@@ -1,0 +1,7 @@
+id: playwright-trace-attachment-plugin
+name: Trace Views Plugin
+description: Plugin integrates trace view links into the reports
+jsFiles:
+  - index.js
+cssFiles:
+  - style.css
