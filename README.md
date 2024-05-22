@@ -36,4 +36,4 @@ This issue does not occur if you choose a more custom approach like hosting the 
 We are using it daily in this kind of configuration:
 1) Host the remote report server in a Kubernetes cluster.
 2) Host our own instance of Trace Viewer in the cluster.
-3) Configure a load balancer to expose the trace viewer app under the domain of the reporter: https://allure.reports-example.com/trace-view-app.
+3) Configure a load balancer to expose the trace viewer app under the domain of the reporter. For example: https://allure.reports-example.com/trace-view-app.
