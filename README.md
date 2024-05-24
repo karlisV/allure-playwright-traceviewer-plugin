@@ -23,7 +23,7 @@ By default the plugin uses the Trace View app hosted here https://trace.playwrig
 
 Important that regardless if it's a text or zip attachment, the name of the attachment should be `"pw-trace"`.
 
-[TODO] Add a gif with demo
+![](https://s10.gifyu.com/images/SfR0L.gif)
 
 ## Known issues
 ### CORS (Important!!!)
