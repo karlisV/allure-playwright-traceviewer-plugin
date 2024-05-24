@@ -19,7 +19,7 @@ By default the plugin uses the Trace View app hosted here https://trace.playwrig
 1) During the testing, create the trace files
 2) Add an attachment to the reporter named `"pw-trace"`:
     * **Recommended:** Upload the trace files somewhere and attach the link as text 
-    * Alternatively, attach it to the reporter directly (add the attachment with type `"application/zip"`) (**see [CORS](#CORS) section in Known issues**)
+    * Alternatively, attach it to the reporter directly (add the attachment with type `"application/zip"`) (**see [CORS](#cors-important) section in Known issues**)
 
 Important that regardless if it's a text or zip attachment, the name of the attachment should be `"pw-trace"`.
 
