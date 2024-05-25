@@ -10,10 +10,12 @@ By default the plugin uses the Trace View app hosted here https://trace.playwrig
 ## Installing the plugin
 
 ### Allure setup
+You can add the `index.js`, `style.css`, and the `allure-plugin.yml` files from this project in the correct places as describe [here](https://github.com/allure-framework/allure-docs/blob/main/content/plugins/overview.md#step-8-enabling-a-plugin) without running any maven commands. This project structure is kept only for our convenience
+
+Alternatively, you can:
 1) Run `mvn clean package`.
 2) Grab the .zip file.
 3) Unzip the file in the "plugins" folder in you Allure CLI distribution and enable it as per instructions [here](https://github.com/allure-framework/allure-docs/blob/main/content/plugins/overview.md#step-8-enabling-a-plugin).
-
 
 ### Test framework setup
 1) During the testing, create the trace files
