@@ -50,6 +50,7 @@ const TraceView = Backbone.Marionette.View.extend({
             return `<div class="trace-view-container">
                 <a href="${pwUrl}" target="_blank">Open trace viewer in new tab</a>
                 <div class="trace-content">
+                <div class="spinner" id="trace-spinner"></div>
                     <iframe src="${pwUrl}" width="100%" height="800px" frameborder="0" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
                 </div>
             </div>`;
@@ -59,6 +60,14 @@ const TraceView = Backbone.Marionette.View.extend({
 
     render: function() {
         this.$el.html(this.template());
+        const iframe = this.$el.find('iframe');
+
+        if (iframe.length) {
+            iframe.on('load', function() {
+                document.getElementById('trace-spinner').style.display = 'none';
+            });
+        }
+
         return this;
     },
 });
