@@ -27,7 +27,7 @@
   inherits: false;
 }
 
-.trace-content > #loading-spinner {
+#loading-spinner {
   position: absolute;
   top: 40%;
   left: 40%;
@@ -49,7 +49,7 @@
   animation: load 2.5s both infinite ease-in-out, spin 3.25s infinite linear;
 }
 
-#loading-spinner > .loader-text {
+#loader-text {
   position: absolute;
   top: 50%;
   left: 50%;

@@ -53,7 +53,7 @@ const TraceView = Backbone.Marionette.View.extend({
                 <a href="${pwUrl}" target="_blank">Open trace viewer in new tab</a>
                 <div class="trace-content">
                   <div class="loader" id='loading-spinner'>
-                    <div class="loader-text">loading</div>
+                    <div id="loader-text">loading</div>
                   </div>
                   <iframe id="trace-iframe" width="100%" height="800px" frameborder="0" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
                 </div>`;
