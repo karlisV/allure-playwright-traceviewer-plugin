@@ -1,7 +1,83 @@
 .trace-view-container {
-    margin: 10px;
+  margin: 10px;
 }
 
 .trace-view-container > .trace-content {
-    margin-top: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+:root {
+  --size: 25;
+  --color-one: #e53434;
+  --color-two: #843adf;
+  --color-three: #22c55e;
+  --color-four: #fbbf24;
+}
+
+@property --nose {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: false;
+}
+
+@property --tail {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: false;
+}
+
+#loading-spinner {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  height: calc(var(--size) * 1vmin);
+  width: calc(var(--size) * 1vmin);
+  border-radius: 50%;
+  mask: conic-gradient(
+    from 45deg,
+    transparent 0 var(--tail),
+    #000 0 var(--nose),
+    transparent 0 var(--nose)
+  );
+  border-style: solid;
+  border-width: 4vmin;
+  border-top-color: var(--color-one);
+  border-right-color: var(--color-two);
+  border-bottom-color: var(--color-three);
+  border-left-color: var(--color-four);
+  animation: load 2.5s both infinite ease-in-out, spin 3.25s infinite linear;
+}
+
+#loader-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: calc(var(--size) / 7 * 1vmin);
+  color: #000;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load {
+  0% {
+    --tail: 0%;
+    --nose: 0%;
+  }
+  40%,
+  60% {
+    --nose: 100%;
+    --tail: 0%;
+  }
+  100% {
+    --nose: 100%;
+    --tail: 100%;
+  }
 }
